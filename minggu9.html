@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid gray;
+            padding: 25px;
+        }
+        .row: ::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        col-1 {width: 8.33%;}
+        col-2 {width: 16.66%;}
+        col-3 {width: 25%;}
+        col-4 {width: 33%;}
+        col-5 {width: 41.66%;}
+        col-6 {width: 50%;}
+        col-7 {width: 58.33%;}
+        col-8 {width: 66.66%;}
+        col-9 {width: 75%;}
+        col-10 {width: 83.33%;}
+        col-11 {width: 91.66%;}
+        col-12 {width: 100%;}
+    </style>
+</head>
+<body>
+    <header>
+        <H2>Judul Halaman</H2>
+    </header>
+    <main class="row">
+        <nav class="col-3">
+            <ul>
+                <li>Menu1</li>
+                <li>Menu2</li>
+            </ul>
+        </nav>
+        <article class="col-9">
+            <h4>Judul Isi</h4>
+            <p>tampan sekali kau yaaaaaaaaaaaaaaaa</p>
+        </article>
+    </main>
+    <footer class="col-12">
+        copyright <i>copy</i>
+        pbw2022
+    </footer>
+</body>
+</html>
